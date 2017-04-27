@@ -11802,7 +11802,7 @@ We are trying to find the probablily of a future student to fail. Probabilities 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[3]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries</span>
@@ -11854,7 +11854,7 @@ We are trying to find the probablily of a future student to fail. Probabilities 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Calculate number of students</span>
@@ -11870,7 +11870,7 @@ We are trying to find the probablily of a future student to fail. Probabilities 
 <span class="n">n_failed</span> <span class="o">=</span> <span class="p">(</span><span class="n">student_data</span><span class="p">[</span><span class="s1">&#39;passed&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;no&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span>
 
 <span class="c1"># TODO: Calculate graduation rate</span>
-<span class="n">grad_rate</span> <span class="o">=</span> <span class="n">n_passed</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">n_students</span><span class="p">)</span>
+<span class="n">grad_rate</span> <span class="o">=</span> <span class="p">(</span><span class="n">n_passed</span> <span class="o">/</span> <span class="nb">float</span><span class="p">(</span><span class="n">n_students</span><span class="p">))</span> <span class="o">*</span> <span class="mi">100</span>
 
 <span class="c1"># Print the results</span>
 <span class="k">print</span> <span class="s2">&quot;Total number of students: {}&quot;</span><span class="o">.</span><span class="n">format</span><span class="p">(</span><span class="n">n_students</span><span class="p">)</span>
@@ -11894,7 +11894,7 @@ We are trying to find the probablily of a future student to fail. Probabilities 
 Number of features: 30
 Number of students who passed: 265
 Number of students who failed: 130
-Graduation rate of the class: 0.67%
+Graduation rate of the class: 67.09%
 </pre>
 </div>
 </div>
@@ -11917,7 +11917,7 @@ Graduation rate of the class: 0.67%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Extract feature columns</span>
@@ -11999,7 +11999,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">preprocess_features</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -12070,7 +12070,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import any additional functionality you may need here</span>
@@ -12169,7 +12169,7 @@ Testing set has 95 samples.
 </ul>
 </li>
 <li><strong>K-NN</strong>: knn is great when the data is grouped in some specific "areas". perform well when the data is large.<ul>
-<li>weakness: knn is requiring high algorithmic complexity, and perform poorly where some cases appear on either side of a boundary.</li>
+<li>weakness: knn is requiring high algorithmic complexity, and also it is difficult to choose the right number for K.</li>
 </ul>
 </li>
 </ul>
@@ -12204,7 +12204,7 @@ Testing set has 95 samples.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">train_classifier</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
@@ -12277,7 +12277,7 @@ Testing set has 95 samples.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import the three supervised learning models from sklearn</span>
@@ -12292,7 +12292,7 @@ Testing set has 95 samples.
 
 <span class="c1"># TODO: Initialize the three models</span>
 <span class="n">clf_A</span> <span class="o">=</span> <span class="n">GaussianNB</span><span class="p">()</span>
-<span class="n">clf_B</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">()</span>
+<span class="n">clf_B</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
 <span class="n">clf_C</span> <span class="o">=</span> <span class="n">KNeighborsClassifier</span><span class="p">()</span>
 
 <span class="c1"># TODO: Set up the training set sizes</span>
@@ -12335,7 +12335,7 @@ Testing set has 95 samples.
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Training a GaussianNB using a training set size of 100. . .
-Trained model in 0.0160 seconds
+Trained model in 0.0000 seconds
 Made predictions in 0.0000 seconds.
 F1 score for training set: 0.8550.
 Made predictions in 0.0000 seconds.
@@ -12347,44 +12347,44 @@ F1 score for training set: 0.8321.
 Made predictions in 0.0000 seconds.
 F1 score for test set: 0.7132.
 Training a GaussianNB using a training set size of 300. . .
-Trained model in 0.0000 seconds
+Trained model in 0.0160 seconds
 Made predictions in 0.0000 seconds.
 F1 score for training set: 0.8088.
 Made predictions in 0.0000 seconds.
 F1 score for test set: 0.7500.
 Training a SVC using a training set size of 100. . .
-Trained model in 0.0180 seconds
-Made predictions in 0.0040 seconds.
+Trained model in 0.0000 seconds
+Made predictions in 0.0160 seconds.
 F1 score for training set: 0.8591.
 Made predictions in 0.0000 seconds.
 F1 score for test set: 0.7838.
 Training a SVC using a training set size of 200. . .
-Trained model in 0.0160 seconds
-Made predictions in 0.0150 seconds.
+Trained model in 0.0150 seconds
+Made predictions in 0.0160 seconds.
 F1 score for training set: 0.8693.
 Made predictions in 0.0000 seconds.
 F1 score for test set: 0.7755.
 Training a SVC using a training set size of 300. . .
-Trained model in 0.0450 seconds
-Made predictions in 0.0170 seconds.
+Trained model in 0.0470 seconds
+Made predictions in 0.0160 seconds.
 F1 score for training set: 0.8692.
-Made predictions in 0.0050 seconds.
+Made predictions in 0.0080 seconds.
 F1 score for test set: 0.7586.
 Training a KNeighborsClassifier using a training set size of 100. . .
-Trained model in 0.0160 seconds
-Made predictions in 0.0000 seconds.
+Trained model in 0.0050 seconds
+Made predictions in 0.0080 seconds.
 F1 score for training set: 0.7972.
-Made predictions in 0.0050 seconds.
+Made predictions in 0.0080 seconds.
 F1 score for test set: 0.7068.
 Training a KNeighborsClassifier using a training set size of 200. . .
-Trained model in 0.0030 seconds
-Made predictions in 0.0130 seconds.
+Trained model in 0.0040 seconds
+Made predictions in 0.0160 seconds.
 F1 score for training set: 0.8571.
-Made predictions in 0.0070 seconds.
+Made predictions in 0.0130 seconds.
 F1 score for test set: 0.7121.
 Training a KNeighborsClassifier using a training set size of 300. . .
-Trained model in 0.0040 seconds
-Made predictions in 0.0360 seconds.
+Trained model in 0.0080 seconds
+Made predictions in 0.0330 seconds.
 F1 score for training set: 0.8722.
 Made predictions in 0.0100 seconds.
 F1 score for test set: 0.7482.
@@ -12603,7 +12603,7 @@ F1 score for test set: 0.7482.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;GridSearchCV&#39; and &#39;make_scorer&#39;</span>
@@ -12611,7 +12611,7 @@ F1 score for test set: 0.7482.
 <span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">make_scorer</span>
 
 <span class="k">print</span> <span class="s1">&#39;############# note for the reviwer #############&#39;</span>
-<span class="k">print</span> <span class="s1">&#39;as it turn out, GaussianNB dosn</span><span class="se">\t</span><span class="s1"> have parameters to tune, as it show here:&#39;</span>
+<span class="k">print</span> <span class="s1">&#39;as it turn out, GaussianNB dosn</span><span class="se">\&#39;</span><span class="s1">t have parameters to tune, as it show here:&#39;</span>
 <span class="k">print</span> <span class="s1">&#39;run GaussianNB().get_params().keys():&#39;</span>
 <span class="k">print</span> <span class="n">GaussianNB</span><span class="p">()</span><span class="o">.</span><span class="n">get_params</span><span class="p">()</span><span class="o">.</span><span class="n">keys</span><span class="p">()</span>
 <span class="k">print</span> <span class="s1">&#39;empty array. so i</span><span class="se">\&#39;</span><span class="s1">m going to tune the SVM classifier. i hope that</span><span class="se">\&#39;</span><span class="s1">s all right.&#39;</span>
@@ -12651,14 +12651,14 @@ F1 score for test set: 0.7482.
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>############# note for the reviwer #############
-as it turn out, GaussianNB dosn	 have parameters to tune, as it show here:
+as it turn out, GaussianNB dosn&#39;t have parameters to tune, as it show here:
 run GaussianNB().get_params().keys():
 []
 empty array. so i&#39;m going to tune the SVM classifier. i hope that&#39;s all right.
 ################################################
 Made predictions in 0.0200 seconds.
 Tuned model has a training F1 score of 0.8692.
-Made predictions in 0.0160 seconds.
+Made predictions in 0.0070 seconds.
 Tuned model has a testing F1 score of 0.7586.
 </pre>
 </div>
