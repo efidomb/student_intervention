@@ -11785,7 +11785,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>Answer: </strong>
 this is a classification problem.
-we are trying to determen if certain student is about fail. there is only two options here: fail or passed. so this is a classification problem.
+we are trying to determine if certain student is about fail. there is only two options here: fail or passed. so this is a classification problem.
 in contrast to the regression problem where the output is measured on a continuous scale.</p>
 
 </div>
@@ -11803,7 +11803,7 @@ in contrast to the regression problem where the output is measured on a continuo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Import libraries</span>
@@ -11855,7 +11855,7 @@ in contrast to the regression problem where the output is measured on a continuo
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Calculate number of students</span>
@@ -11918,7 +11918,7 @@ Graduation rate of the class: 67.09%
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># Extract feature columns</span>
@@ -12000,7 +12000,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">preprocess_features</span><span class="p">(</span><span class="n">X</span><span class="p">):</span>
@@ -12071,7 +12071,7 @@ Feature values:
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import any additional functionality you may need here</span>
@@ -12205,7 +12205,7 @@ Testing set has 95 samples.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="k">def</span> <span class="nf">train_classifier</span><span class="p">(</span><span class="n">clf</span><span class="p">,</span> <span class="n">X_train</span><span class="p">,</span> <span class="n">y_train</span><span class="p">):</span>
@@ -12278,7 +12278,7 @@ Testing set has 95 samples.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import the three supervised learning models from sklearn</span>
@@ -12336,26 +12336,26 @@ Testing set has 95 samples.
 <div class="output_area"><div class="prompt"></div>
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>Training a GaussianNB using a training set size of 100. . .
-Trained model in 0.0000 seconds
+Trained model in 0.0150 seconds
 Made predictions in 0.0000 seconds.
 F1 score for training set: 0.8550.
-Made predictions in 0.0000 seconds.
+Made predictions in 0.0020 seconds.
 F1 score for test set: 0.7481.
 Training a GaussianNB using a training set size of 200. . .
-Trained model in 0.0000 seconds
-Made predictions in 0.0000 seconds.
+Trained model in 0.0060 seconds
+Made predictions in 0.0030 seconds.
 F1 score for training set: 0.8321.
-Made predictions in 0.0000 seconds.
+Made predictions in 0.0020 seconds.
 F1 score for test set: 0.7132.
 Training a GaussianNB using a training set size of 300. . .
-Trained model in 0.0160 seconds
-Made predictions in 0.0000 seconds.
+Trained model in 0.0040 seconds
+Made predictions in 0.0020 seconds.
 F1 score for training set: 0.8088.
 Made predictions in 0.0000 seconds.
 F1 score for test set: 0.7500.
 Training a SVC using a training set size of 100. . .
 Trained model in 0.0000 seconds
-Made predictions in 0.0160 seconds.
+Made predictions in 0.0000 seconds.
 F1 score for training set: 0.8591.
 Made predictions in 0.0000 seconds.
 F1 score for test set: 0.7838.
@@ -12366,28 +12366,28 @@ F1 score for training set: 0.8693.
 Made predictions in 0.0000 seconds.
 F1 score for test set: 0.7755.
 Training a SVC using a training set size of 300. . .
-Trained model in 0.0470 seconds
-Made predictions in 0.0160 seconds.
+Trained model in 0.0630 seconds
+Made predictions in 0.0520 seconds.
 F1 score for training set: 0.8692.
-Made predictions in 0.0080 seconds.
+Made predictions in 0.0090 seconds.
 F1 score for test set: 0.7586.
 Training a KNeighborsClassifier using a training set size of 100. . .
-Trained model in 0.0050 seconds
-Made predictions in 0.0080 seconds.
+Trained model in 0.0040 seconds
+Made predictions in 0.0110 seconds.
 F1 score for training set: 0.7972.
-Made predictions in 0.0080 seconds.
+Made predictions in 0.0090 seconds.
 F1 score for test set: 0.7068.
 Training a KNeighborsClassifier using a training set size of 200. . .
-Trained model in 0.0040 seconds
-Made predictions in 0.0160 seconds.
+Trained model in 0.0050 seconds
+Made predictions in 0.0170 seconds.
 F1 score for training set: 0.8571.
-Made predictions in 0.0130 seconds.
+Made predictions in 0.0070 seconds.
 F1 score for test set: 0.7121.
 Training a KNeighborsClassifier using a training set size of 300. . .
-Trained model in 0.0080 seconds
-Made predictions in 0.0330 seconds.
+Trained model in 0.0040 seconds
+Made predictions in 0.0170 seconds.
 F1 score for training set: 0.8722.
-Made predictions in 0.0100 seconds.
+Made predictions in 0.0150 seconds.
 F1 score for test set: 0.7482.
 </pre>
 </div>
@@ -12604,7 +12604,7 @@ F1 score for test set: 0.7482.
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython2"><pre><span></span><span class="c1"># TODO: Import &#39;GridSearchCV&#39; and &#39;make_scorer&#39;</span>
@@ -12622,7 +12622,7 @@ F1 score for test set: 0.7482.
 <span class="n">parameters</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;kernel&#39;</span><span class="p">:(</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="s1">&#39;poly&#39;</span><span class="p">,</span> <span class="s1">&#39;rbf&#39;</span><span class="p">,</span> <span class="s1">&#39;sigmoid&#39;</span><span class="p">,</span> <span class="s1">&#39;rbf&#39;</span><span class="p">),</span> <span class="s1">&#39;C&#39;</span><span class="p">:[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">]}</span>
 <span class="c1"># parameters = {&#39;kernel&#39;:(&#39;linear&#39;, &#39;poly&#39;, &#39;rbf&#39;, &#39;sigmoid&#39;, &#39;precomputed&#39;, &#39;rbf&#39;), &#39;C&#39;:[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]}</span>
 <span class="c1"># TODO: Initialize the classifier</span>
-<span class="n">clf</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">()</span>
+<span class="n">clf</span> <span class="o">=</span> <span class="n">svm</span><span class="o">.</span><span class="n">SVC</span><span class="p">(</span><span class="n">random_state</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span>
 
 <span class="c1"># TODO: Make an f1 scoring function using &#39;make_scorer&#39; </span>
 <span class="n">f1_scorer</span> <span class="o">=</span> <span class="n">make_scorer</span><span class="p">(</span><span class="n">f1_score</span><span class="p">,</span> <span class="n">pos_label</span><span class="o">=</span><span class="s2">&quot;yes&quot;</span><span class="p">)</span>
@@ -12657,10 +12657,6 @@ run GaussianNB().get_params().keys():
 []
 empty array. so i&#39;m going to tune the SVM classifier. i hope that&#39;s all right.
 ################################################
-Made predictions in 0.0200 seconds.
-Tuned model has a training F1 score of 0.8692.
-Made predictions in 0.0070 seconds.
-Tuned model has a testing F1 score of 0.7586.
 </pre>
 </div>
 </div>
